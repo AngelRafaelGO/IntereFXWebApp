@@ -1615,11 +1615,10 @@ function load() {
 	setupFreezeFrameOverlay();
 	registerKeyboardEvents();
 	start();
-
-	buildIframe()
 }
 
 function changeView(){
+
 	let wrapper = document.getElementById('player');
 	console.log(wrapper.style.left);
 	wrapper.style.left = (wrapper.style.left == '0px'?'-100%':'0px');
@@ -1634,10 +1633,8 @@ function switchPages(){
 	credits.style.display = (credits.style.display == 'none' ? '' : 'none');
 }
 
-function buildIframe(){
-	let url = window.location.href;
-	url = url.slice(7)
-	
-
-	document.getElementById('player').setAttribute("src","https://player.twitch.tv/?channel=muthlive&parent=" + url);
+function createTriggEv(){
+	let wrapper = document.getElementById("triggerClick");
+	wrapper.style.display = "";
+	console.log("OOOOOOOOOOOOOOOOOO");
 }

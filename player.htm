@@ -13,12 +13,12 @@
     <script type="text/javascript" src="scripts/app.js"></script>
 </head>
 
-<body onload="load()">
+<body>
 	<div id="playerUI">
 		<div id="cadre"></div>
 		<div class="wraper-player">
 			<div id="triggerClick" onclick="changeView()"></div>
-			<iframe id="player" frameborder="0" allowfullscreen="true" scrolling="no" style="max-width:100%"></iframe>
+			<iframe id="player" src="https://www.youtube.com/embed/XDh0JcxrbPM?controls=0&mute=1&enablejsapi=1&autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay;"></iframe>
 		</div>
 		<div id="overlay" class="overlay">
 			<div>
@@ -185,6 +185,6 @@
         <canvas id="canvas"></canvas>
         <canvas id="buffer"></canvas>
     </div>
-	<script type="text/javascript" src="scripts/particles.js"></script>
+	<script type="text/javascript" src="scripts/particles.js"></>
 </body>
 </html>
