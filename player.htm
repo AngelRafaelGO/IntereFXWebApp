@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 	<link type="text/css" rel="stylesheet" href="player.css">
-	<link rel="stylesheet" href="/public/credits.css">
+	<link rel="stylesheet" href="credits.css">
     <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <script type="text/javascript" src="scripts/webRtcPlayer.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
@@ -60,16 +60,79 @@
 				</div>
 			</div>
 		</div>
-		<div class="credits">
+		<div id="credits" class="credits" style="display:none">
 			<div class="main-title">
 				<h1>Credits</h1>
 			</div>
 			<div class="main-content">
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae corrupti iste a placeat ut laborum voluptatibus? Saepe placeat quisquam ipsum excepturi fugit, doloremque laborum, facere reprehenderit aperiam, ducimus cumque alias.</p>
+				<h3 id="devs" class="role">
+					Developpeurs
+				</h3>
+				<div class="members">
+					Lucas SERVAIN <br/>
+					Hugo Aversenq<br/>
+					Angel Rafael
+				</div>
+
+
+				<h3 id="modé" class="role">
+					Modelling
+				</h3>
+				<div class="members">
+					Lucas SERVAIN<br/>
+					Hugo Aversenq<br/>
+					Lucas SERVAIN<br/>
+					Hugo Aversenq<br/>
+					Lucas SERVAIN<br/>
+					Hugo Aversenq<br/>
+					Lucas SERVAIN<br/>
+					Hugo Aversenq<br/>
+
+					Lucas SERVAIN<br/>
+					Hugo Aversenq<br/>
+					Angel Rafael
+					Lucas SERVAIN<br/>
+					Hugo Aversenq<br/>
+					Angel Rafael
+					Lucas SERVAIN<br/>
+					Hugo Aversenq<br/>
+					Angel Rafael
+				</div>
+
+				<h3 id="Integrateurs" class="role">
+					Texturing
+				</h3>
+				<div class="members">
+					Lucas SERVAIN <br/>
+					Hugo Aversenq<br/>
+					Angel Rafael
+				</div>
+
+				<h3 id="Integrateurs" class="role">
+					Unreal & VFX
+				</h3>
+				<div class="members">
+					Lucas SERVAIN <br/>
+					Hugo Aversenq<br/>
+					Angel Rafael
+				</div>
+
+
+				<h3 id="Graphistes" class="role">
+					Graphistes
+				</h3>
+				<div class="members">
+					Lucas SERVAIN <br/>
+					Hugo Aversenq<br/>
+					Angel Rafael
+				</div>
+
+
+
 			</div>
 		</div>
 		<nav>
-			<input id="switchButton" type="image" src='./images/iconedesbougs.png' name="switchPages"/>
+			<input id="switchButton" type="image" src='./images/iconedesbougs.png' onclick="switchPages()"/>
 		</nav>
 	</div>
 </body>

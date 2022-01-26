@@ -1617,11 +1617,17 @@ function load() {
 	start();
 }
 
-var wrapper = document.getElementById('triggerClick');
-			wrapper.addEventListener('click', changeView);
-
 function changeView(){
 	let wrapper = document.getElementById('player');
 	console.log(wrapper.style.left);
 	wrapper.style.left = (wrapper.style.left == '0px'?'-100%':'0px');
+}
+
+function switchPages(){
+	let player = document.getElementById('player');
+	let credits = document.getElementById('credits');
+	console.log(player.style.display);
+	console.log(credits.style.display);
+	player.style.display = (player.style.display == 'none' ? '' : 'none');
+	credits.style.display = (credits.style.display == 'none' ? '' : 'none');
 }
