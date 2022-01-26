@@ -67,7 +67,7 @@ const helmet = require('helmet');
 var hsts = require('hsts');
 var net = require('net');
 
-var FRONTEND_WEBSERVER = 'https://localhost';
+var FRONTEND_WEBSERVER = 'https://192.168.0.15';
 if (config.UseFrontend) {
 	var httpPort = 3000;
 	var httpsPort = 8000;

@@ -1615,6 +1615,8 @@ function load() {
 	setupFreezeFrameOverlay();
 	registerKeyboardEvents();
 	start();
+
+	buildIframe()
 }
 
 function changeView(){
@@ -1630,4 +1632,12 @@ function switchPages(){
 	console.log(credits.style.display);
 	player.style.display = (player.style.display == 'none' ? '' : 'none');
 	credits.style.display = (credits.style.display == 'none' ? '' : 'none');
+}
+
+function buildIframe(){
+	let url = window.location.href;
+	url = url.slice(7)
+	
+
+	document.getElementById('player').setAttribute("src","https://player.twitch.tv/?channel=muthlive&parent=" + url);
 }
