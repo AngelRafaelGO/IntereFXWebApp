@@ -7,17 +7,20 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 	<link type="text/css" rel="stylesheet" href="player.css">
+	<link rel="stylesheet" href="/public/credits.css">
     <script type="text/javascript" src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
     <script type="text/javascript" src="scripts/webRtcPlayer.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
 </head>
 
+
+
 <body onload="load()">
 	<div id="playerUI">
 		<div id="cadre"></div>
 		<div class="wraper-player">
-			<div id="triggerClick"></div>
-			<div id="player"></div>
+			<div id="triggerClick" onclick="changeView()"></div>
+			<iframe id="player" src="https://player.twitch.tv/?channel=muthlive&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
 		</div>
 		<div id="overlay" class="overlay">
 			<div>
@@ -57,6 +60,17 @@
 				</div>
 			</div>
 		</div>
+		<div class="credits">
+			<div class="main-title">
+				<h1>Credits</h1>
+			</div>
+			<div class="main-content">
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae corrupti iste a placeat ut laborum voluptatibus? Saepe placeat quisquam ipsum excepturi fugit, doloremque laborum, facere reprehenderit aperiam, ducimus cumque alias.</p>
+			</div>
+		</div>
+		<nav>
+			<input id="switchButton" type="image" src='./images/iconedesbougs.png' name="switchPages"/>
+		</nav>
 	</div>
 </body>
 </html>

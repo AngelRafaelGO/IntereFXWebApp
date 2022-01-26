@@ -19,7 +19,25 @@ image {
 body{
     margin: 0px;
     /*background-color: black;*/
-}	
+}
+
+nav{
+	display: flex;
+	justify-content:center;
+	width:100%;
+
+	position:absolute;
+	bottom:0;
+
+	z-index:50;
+}
+
+#switchButton{
+	height: 8vh;
+	width:8vh;
+
+	background-image: url(../images/iconedesbougs.png);
+}
 
 #playerUI {
     position: absolute;
@@ -63,8 +81,15 @@ video {
     object-fit: cover;
 }
 
-#player {
+#embeded {
     width: 100%!important;
+    height: 84%!important;
+    top: 154px!important;
+    position: relative;
+}
+
+iframe{
+	width: 200%!important;
     height: 84%!important;
     top: 154px!important;
     position: relative;

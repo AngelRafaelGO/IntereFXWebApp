@@ -3,17 +3,10 @@
     src: url('/public/fonts/Norse.otf');
 }
 
-* {
+.credits {
     font-family: 'Norse', Helvetica;
     color: ivory;
-}
-
-image {
-    size: 100%;
-}
-
-body {
-    margin: 0%;
+    z-index:50;
 }
 
 .main-div {
@@ -21,10 +14,9 @@ body {
     height: 100%;
     margin: 0%;
     position: absolute;
-    background-image: url("cadreui.png");
+    background-image: url("./Background_ui.png");
 	background-repeat: no-repeat;
     background-size: 100% 100%;
-
 }
 
 .main-title {

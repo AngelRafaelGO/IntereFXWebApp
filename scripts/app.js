@@ -219,8 +219,6 @@ function setOverlay(htmlClass, htmlElement, onClickFunction) {
 		videoPlayOverlay.addEventListener('click', function onOverlayClick(event) {
 			onClickFunction(event);
 			videoPlayOverlay.removeEventListener('click', onOverlayClick);
-			var wrapper = document.getElementById('triggerClick');
-			wrapper.addEventListener('click', changeView);		
 		});
 	}
 
@@ -1618,6 +1616,9 @@ function load() {
 	registerKeyboardEvents();
 	start();
 }
+
+var wrapper = document.getElementById('triggerClick');
+			wrapper.addEventListener('click', changeView);
 
 function changeView(){
 	let wrapper = document.getElementById('player');
