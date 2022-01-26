@@ -34,13 +34,12 @@
 .main-title {
     display: flex;
     justify-content: center; 
-    padding-top: 80px;
+    padding-top: 5%;
     font-family: 'Norse';
     font-size:xxx-large;
 }
 
 .main-content {
-    padding: 50px;
     text-align: center;
     font-family: 'Norse';
     font-size: xx-large;

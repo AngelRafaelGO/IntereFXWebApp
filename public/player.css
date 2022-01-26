@@ -408,3 +408,24 @@ img#playButton{
   background: var(--colour5);
 }
 /*** Toggle Switch styles ***/
+
+
+/*** Sparks Particles Effect styles ***/
+.page-spark {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: transparent;
+    filter: blur(2px) contrast(2);
+    z-index: 40;
+}
+#canvas {
+	opacity: 1;
+	filter: blur(20px) contrast(40);
+}
+
+    #buffer {
+	opacity: 0.8;
+	filter: blur(1px) contrast(15);
+}
