@@ -17,7 +17,6 @@
 	<div id="playerUI">
 		<div id="cadre"></div>
 		<div class="wraper-player">
-			<div id="triggerClick" onclick="changeView()"></div>
 			<iframe id="player" src="https://www.youtube.com/embed/XDh0JcxrbPM?controls=0&mute=1&enablejsapi=1&autoplay=1" title="YouTube video player" frameborder="0" allow="autoplay;"></iframe>
 		</div>
 		<div id="overlay" class="overlay">
@@ -177,7 +176,9 @@
 			</div>
 		</div>
 		<nav>
+			<input id="leftbutton" type="image" src='./images/iconedesbougs.png' onclick='pushViewportLeft()' disabled="true"/>
 			<input id="switchButton" type="image" src='./images/iconedesbougs.png' onclick="switchPages()"/>
+			<input id="rightbutton" type="image" src='./images/iconedesbougs.png' onclick='pushViewportRight()'/>
 		</nav>
 	</div>
 
@@ -185,6 +186,6 @@
         <canvas id="canvas"></canvas>
         <canvas id="buffer"></canvas>
     </div>
-	<script type="text/javascript" src="scripts/particles.js"></>
+	<script type="text/javascript" src="scripts/particles.js"></script>
 </body>
 </html>

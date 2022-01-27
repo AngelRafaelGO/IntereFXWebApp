@@ -1617,11 +1617,18 @@ function load() {
 	start();
 }
 
-function changeView(){
+function pushViewportLeft(){
+	let viewport = document.getElementById('player');
+	viewport.style.left = '0px';
+	document.getElementById('leftbutton').disabled = true;
+	document.getElementById('rightbutton').disabled = false;
+}
 
-	let wrapper = document.getElementById('player');
-	console.log(wrapper.style.left);
-	wrapper.style.left = (wrapper.style.left == '0px'?'-100%':'0px');
+function pushViewportRight(){
+	let viewport = document.getElementById('player');
+	viewport.style.left = '-100%';
+	document.getElementById('leftbutton').disabled = false;
+	document.getElementById('rightbutton').disabled = true;
 }
 
 function switchPages(){
@@ -1631,10 +1638,4 @@ function switchPages(){
 	console.log(credits.style.display);
 	player.style.display = (player.style.display == 'none' ? '' : 'none');
 	credits.style.display = (credits.style.display == 'none' ? '' : 'none');
-}
-
-function createTriggEv(){
-	let wrapper = document.getElementById("triggerClick");
-	wrapper.style.display = "";
-	console.log("OOOOOOOOOOOOOOOOOO");
 }

@@ -23,7 +23,7 @@ body{
 
 nav{
 	display: flex;
-	justify-content:center;
+	justify-content:space-around;
 	width:100%;
 
 	position:absolute;
@@ -32,10 +32,12 @@ nav{
 	z-index:50;
 }
 
-#switchButton{
+input{
 	height: 8vh;
 	width:8vh;
+}
 
+#switchButton{
 	background-image: url(../images/iconedesbougs.png);
 }
 
