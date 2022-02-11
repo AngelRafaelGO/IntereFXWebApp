@@ -1,4 +1,4 @@
-# InterFXTestWebApp
+# InterFXWebApp
 
 This project was made during the Ultrahackathon 2022 IntereFX.
 
